@@ -6,14 +6,14 @@ const Wrapper = styled.section`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
-  @media (min-width: 767px) {
+  @media (min-width: 521px) {
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
     padding: 2.5rem 0;
   }
-  @media (min-width: 1024px) {
+  @media (min-width: 897px) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 4rem;
+    gap: 2rem;
   }
 `;
 export const List = ({ children }: any) => {

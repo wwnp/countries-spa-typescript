@@ -31,8 +31,6 @@ code {
 
 header {
   grid-area: header;
-  min-height: 50px;
-  box-shadow: 1px 2px 3px #ccc;
 }
 
 main {
@@ -43,14 +41,15 @@ footer {
   grid-area: footer;
 }
 
-
 body[data-theme='dark'] {
   --colors-text: hsl(0, 0%, 100%);
-  --colors-bg: hsl(0, 0%, 16%);
-  --colors-ui-base: hsl(0, 0%, 23%);
+  --colors-bg: #0e0e10;
+  --colors-ui-base: #1e1827;
 
   --shadow: rgba(85, 84, 84, 0.582) 0 2px 5px;
   --shadow-hover: rgba(184, 183, 183, 0.603) 0px 2px 10px;
+
+  --text-shadow-hover: rgb(255, 255, 255) 0px 2px 10px;
 }
 body[data-theme='light'] {
   --colors-text: hsl(0, 0%, 0%);
@@ -59,6 +58,8 @@ body[data-theme='light'] {
 
   --shadow: rgba(175, 176, 177, 0.897) 0px 2px 5px;
   --shadow-hover: rgb(49, 49, 49) 0px 2px 10px;
+
+  --text-shadow-hover: rgb(0, 0, 0) 0px 2px 10px;
 }
 /* body[data-theme='carmageddon'] {
   --colors-text: hsl(239, 100%, 50%);

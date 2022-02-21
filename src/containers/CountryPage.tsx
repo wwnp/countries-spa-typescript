@@ -1,6 +1,7 @@
+import React from 'react';
 const CountryPage = () => {
   return (
-    <main className="Country">CountryPage</main>
+    <React.Fragment>CountryPage</React.Fragment>
   )
 }
 
