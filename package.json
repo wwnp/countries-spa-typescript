@@ -44,5 +44,8 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.23"
+  },
+  "resolutions": {
+    "styled-components": "^5"
   }
 }
