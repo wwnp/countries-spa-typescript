@@ -70,9 +70,6 @@ const Card = (props: ICardProps) => {
             </tr>
           </tbody>
         </CardTable>
-        {/* <p>Population: </p> */}
-        {/* <p>Region: {region}</p> */}
-        {/* <p>Capital: {capital}</p> */}
       </CardBody>
     </Wrapper>
   )

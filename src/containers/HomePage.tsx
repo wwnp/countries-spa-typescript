@@ -61,7 +61,6 @@ const HomePage = ({ countries, setCountries }: HomePageProps) => {
   //   setFilteredCountries(data)
   // }
 
-
   const [search, setSearch] = useState<string>('')
   const [region, setRegion] = useState<any>('');
 
@@ -79,8 +78,6 @@ const HomePage = ({ countries, setCountries }: HomePageProps) => {
         return i.name.toLowerCase().includes(search.toLowerCase())
       })
     }
-
-
 
     setFilteredCountries(data)
   }
@@ -113,7 +110,6 @@ const HomePage = ({ countries, setCountries }: HomePageProps) => {
   return (
     <React.Fragment>
       <ControlWrapper>
-        
         <Search handleSearch={handleSearchAndFilter} setSearch={setSearch} search={search}></Search>
         <Filter handleFilter={handleSearchAndFilter} region={region} setRegion={setRegion}></Filter>
         {/* <Search handleSearch={handleSearchAndFilter}></Search> */}

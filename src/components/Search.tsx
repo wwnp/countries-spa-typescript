@@ -52,7 +52,7 @@ const Search = ({ handleSearch, setSearch, search }: any) => {
   return (
     <InputContainer>
       <Input value={search} onChange={e => setSearch(e.target.value)} />
-      <MyIoClose onClick={e => setSearch('')} size={'100%'}></MyIoClose>
+      {/* <MyIoClose onClick={e => setSearch('')} size={'100%'}></MyIoClose> */}
     </InputContainer>
   )
 }

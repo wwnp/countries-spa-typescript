@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useEffect } from 'react';
 import styled from 'styled-components';
-import { IoMoon, IoMoonOutline } from 'react-icons/io5';
+import { IoMoon, IoMoonOutline,IoLogoElectron } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
 const HeaderWrapper = styled.header`
   display: flex;
@@ -16,10 +16,11 @@ const Title = styled(Link).attrs({
   to: '/',
 })`
   color: var(--colors-text);
-  font-size: var(--fs-sm);
+  /* font-size: var(--fs-sm); */
   text-decoration: none;
   font-weight: var(--fw-bold);
   text-transform: uppercase;
+  margin-left: 1rem;
 `;
 
 const RightWrapper = styled.div`
@@ -67,7 +68,7 @@ const Header = () => {
 
   return (
     <HeaderWrapper>
-      <Title>COUNTRY_DB</Title>
+      <Title><IoLogoElectron size={24}></IoLogoElectron></Title>
       <RightWrapper>
         <ModeSwitcher onClick={modeSwitch}>
           {
