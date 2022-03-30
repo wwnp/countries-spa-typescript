@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/spa-typescript/static/css/main.79dca9ba.css",
+    "main.js": "/spa-typescript/static/js/main.b8ec6147.js",
+    "index.html": "/spa-typescript/index.html",
+    "main.79dca9ba.css.map": "/spa-typescript/static/css/main.79dca9ba.css.map",
+    "main.b8ec6147.js.map": "/spa-typescript/static/js/main.b8ec6147.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.79dca9ba.css",
+    "static/js/main.b8ec6147.js"
+  ]
+}
