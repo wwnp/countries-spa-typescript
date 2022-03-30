@@ -45,7 +45,6 @@ const Tag = styled.span`
 
 const InfoFirstCol = (props: any) => {
   const {
-    name,
     flag,
     capital,
     region,
@@ -53,8 +52,7 @@ const InfoFirstCol = (props: any) => {
     latlng,
     population,
     area,
-    borders= [],
-    currencies,
+    borders = [],
   } = props
 
   const [neighbors, setNeighbors] = useState([]);
@@ -78,7 +76,6 @@ const InfoFirstCol = (props: any) => {
 
   return (
     <div>
-      {/* <InfoTitle>{name}</InfoTitle> */}
       <InfoImage src={flag}></InfoImage>
       <CountryTable>
         <tbody>
@@ -117,7 +114,6 @@ const InfoFirstCol = (props: any) => {
                     return (
                       <Tag
                         key={c}
-                        // to={`/country/${c}`}
                         onClick={() => navigate(`/country/${c}`)}
                       >
                         {c}

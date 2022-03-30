@@ -1,7 +1,6 @@
 import Card from 'components/Card'
 import React, { useState } from 'react'
 import { useEffect } from 'react'
-// import { ICardProps } from './../types';
 import { ALL_COUNTRIES } from './../config';
 import { List } from 'components/List';
 import { useNavigate } from 'react-router-dom';
@@ -49,22 +48,9 @@ const HomePage = ({ countries, setCountries }: HomePageProps) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [countries])
 
-  // const handleSearch = () => {
-  //   let data = [...countries]
-  //   if (search) {
-  //     data = data.filter((i, index) => {
-  //       console.log()
-  //       return i.name.toLowerCase().includes(search.toLowerCase())
-  //     })
-  //   }
-  //   console.log(data)
-  //   setFilteredCountries(data)
-  // }
-
   const [search, setSearch] = useState<string>('')
   const [region, setRegion] = useState<any>('');
 
-  // const handleSearchAndFilter = (search:any,region:any) => {
   const handleSearchAndFilter = () => {
     let data = [...countries]
 
@@ -74,7 +60,7 @@ const HomePage = ({ countries, setCountries }: HomePageProps) => {
       })
     }
     if (search) {
-      data = data.filter((i, index) => {
+      data = data.filter((i) => {
         return i.name.toLowerCase().includes(search.toLowerCase())
       })
     }
@@ -84,7 +70,7 @@ const HomePage = ({ countries, setCountries }: HomePageProps) => {
 
   const out = () => {
     if (loading) {
-      return <h1 style={{textAlign:'center'}}>Loading...</h1>
+      return <h1 style={{ textAlign: 'center' }}>Loading...</h1>
     } else {
       return (
         <List>
@@ -112,8 +98,6 @@ const HomePage = ({ countries, setCountries }: HomePageProps) => {
       <ControlWrapper>
         <Search handleSearch={handleSearchAndFilter} setSearch={setSearch} search={search}></Search>
         <Filter handleFilter={handleSearchAndFilter} region={region} setRegion={setRegion}></Filter>
-        {/* <Search handleSearch={handleSearchAndFilter}></Search> */}
-        {/* <Filter handleFilter={handleSearchAndFilter}></Filter> */}
       </ControlWrapper>
       {out()}
     </React.Fragment>

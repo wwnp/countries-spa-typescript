@@ -5,7 +5,7 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename='/spa-typescript'>
     <React.StrictMode>
       <App />
     </React.StrictMode>

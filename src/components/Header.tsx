@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useEffect } from 'react';
 import styled from 'styled-components';
-import { IoMoon, IoMoonOutline,IoLogoElectron } from 'react-icons/io5';
+import { IoMoon, IoMoonOutline, IoLogoElectron } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
 const HeaderWrapper = styled.header`
   display: flex;
@@ -16,7 +16,6 @@ const Title = styled(Link).attrs({
   to: '/',
 })`
   color: var(--colors-text);
-  /* font-size: var(--fs-sm); */
   text-decoration: none;
   font-weight: var(--fw-bold);
   text-transform: uppercase;
@@ -45,9 +44,9 @@ const NameMode = styled.span`
   }
 `
 const GitHubLink = styled.a.attrs({
-  href:'https://github.com/wwnp/spa-typescript',
-  rel:"noopener",
-  target:"__blank"
+  href: 'https://github.com/wwnp/spa-typescript',
+  rel: "noopener",
+  target: "__blank"
 })`
   margin-left: 1.75rem;
   margin-right: 1.75rem;

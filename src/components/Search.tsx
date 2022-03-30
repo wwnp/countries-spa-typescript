@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components';
 import { IoClose } from 'react-icons/io5'
 const InputContainer = styled.label`
@@ -43,8 +43,6 @@ const MyIoClose = styled(IoClose).attrs({})`
 `;
 
 const Search = ({ handleSearch, setSearch, search }: any) => {
-// const Search = ({ handleSearch }: any) => {
-  // const [search, setSearch] = useState<string>('')
   useEffect(() => {
     handleSearch(search)
     // eslint-disable-next-line react-hooks/exhaustive-deps

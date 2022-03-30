@@ -12,7 +12,7 @@ const Wrapper = styled.section`
     padding: 2.5rem 0;
   }
   @media (min-width: 897px) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 2rem;
   }
 `;

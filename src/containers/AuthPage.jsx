@@ -76,7 +76,6 @@ const AuthPage = () => {
         <Button>Log in</Button>
         <p style={{ marginTop: '1rem' }}>Don't have an account. <Link to='/sign-up' style={{ color: 'var(--text-under)' }}>Sing Up</Link></p>
       </Form>
-
     </FormWrapper>
   )
 }
