@@ -1,2 +1,2 @@
 # Project SPA Countries
-## Demo: https://wwnp.github.io/spa-typescript
+## Demo: https://wwnp.github.io/countries-spa-typescript
